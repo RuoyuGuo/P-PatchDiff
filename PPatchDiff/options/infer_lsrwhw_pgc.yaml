@@ -134,7 +134,7 @@ val:
   ddim_eta: !!float 1.0
   ddim_timesteps: 5
   only_save_sr: true
-  use_kind_align: true
+  use_kind_align: false
   cal_all: true
   show_all: true
   val_freq: !!float 5000
