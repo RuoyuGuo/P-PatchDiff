@@ -22,7 +22,7 @@ BASICSR_EXT=True sudo $(which python) setup.py develop
 
 ## Datasets
 
-Please download [LOL-v1](https://daooshee.github.io/BMVC2018website/), [LOL-v2](https://drive.google.com/file/d/1dzuLCk9_gE2bFF222n3-7GVUlSVHpMYC/view), [LOL-v2-Syn]((https://drive.google.com/file/d/1dzuLCk9_gE2bFF222n3-7GVUlSVHpMYC/view), [LSRW](https://github.com/JianghaiSCU/R2RNet), and [UHDLOL](https://github.com/Li-Chongyi/UHDFour_code)
+Please download [LOL-v1](https://daooshee.github.io/BMVC2018website/), [LOL-v2](https://drive.google.com/file/d/1dzuLCk9_gE2bFF222n3-7GVUlSVHpMYC/view), [LOL-v2-Syn](https://drive.google.com/file/d/1dzuLCk9_gE2bFF222n3-7GVUlSVHpMYC/view), [LSRW](https://github.com/JianghaiSCU/R2RNet), and [UHDLOL](https://github.com/Li-Chongyi/UHDFour_code)
 
 LOL-v2 and LOL-v2-Syn are packed together, so you only need to download either of them once.
 
