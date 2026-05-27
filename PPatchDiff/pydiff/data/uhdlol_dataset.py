@@ -34,7 +34,7 @@ class UHDLOL_Dataset(data.Dataset):
         # print(self.gt_paths)
 
     def __getitem__(self, index):
-        downscale = 4
+        # downscale = 4
         gt_path = self.gt_paths[index]
         gt_name = os.path.split(gt_path)[-1]
         
@@ -43,11 +43,11 @@ class UHDLOL_Dataset(data.Dataset):
 
         gt_img = cv2.imread(gt_path)
         h, w, _ = gt_img.shape
-        gt_img = cv2.resize(gt_img, (w//downscale, h//downscale))
+        # gt_img = cv2.resize(gt_img, (w//downscale, h//downscale))
         gt_img = cv2.cvtColor(gt_img, cv2.COLOR_BGR2RGB) / 255.
         
         input_img = cv2.imread(input_path)
-        input_img = cv2.resize(input_img, (w//downscale, h//downscale))
+        # input_img = cv2.resize(input_img, (w//downscale, h//downscale))
         input_img = cv2.cvtColor(input_img, cv2.COLOR_BGR2RGB) / 255.
         
 

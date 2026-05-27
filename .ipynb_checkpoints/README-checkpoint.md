@@ -2,7 +2,7 @@
 
 ## Update
 
-* 05/2026 We release the code and checkpoint
+* 05/2026 We release the code and checkpoint.
 
 ## Setup
 Our code should be compatible with most Python>=3.8 and PyTorch>=1.11 versions.
