@@ -7,9 +7,9 @@ Ruoyu Guo · Haonan Zhong · Maurice Pagnucco · Yang Song
 School of Computer Science and Engineering,  
 University of New South Wales, Sydney, Australia
 
-**Accepted by International Journal of Computer Vision (IJCV)**
+**International Journal of Computer Vision (IJCV), 2026**
 
-[![IJCV](https://img.shields.io/badge/IJCV-Published-blue)](https://link.springer.com/article/10.1007/s11263-026-02995-w)
+[![IJCV](https://img.shields.io/badge/IJCV-2026-blue)](https://link.springer.com/article/10.1007/s11263-026-02995-w)
 [![arXiv](https://img.shields.io/badge/arXiv-2609.01123-b31b1b.svg)](https://arxiv.org/abs/2609.01123)
 [![Weights](https://img.shields.io/badge/Weights-P--PatchDiff-green)](https://drive.google.com/drive/folders/1oCfvwFZNlLmTz7nBnmjseVtOQ7fh6ZYP)
 
