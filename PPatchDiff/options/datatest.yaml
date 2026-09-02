@@ -9,9 +9,8 @@ datasets:
   train:
     name: train
     type: LOL_Dataset
-    gt_root: "./autodl-tmp/dataset/LOLv1/our485/high"
-    input_root: "./autodl-tmp/dataset/LOLv1/our485/low"
-    gt_map_root: "./autodl-tmp/dataset/LOLv1/our485/map_high"
+    gt_root: "../../../PyDIff/dataset/LOLv2/LOLv2test/high/"
+    input_root: "../../../PyDIff/dataset/LOLv2/LOLv2test/low/"
     input_mode: ~
     concat_with_coord: true
     concat_with_hiseq: true
@@ -35,8 +34,8 @@ datasets:
     # Or comment the val block if do not need validation during training
     name: validation
     type: LOL_Dataset
-    gt_root: "../../autodl-tmp/dataset/LOLv1/eval15/high"
-    input_root: "../../autodl-tmp/dataset/LOLv1/eval15/low"
+    gt_root: "../../../PyDIff/dataset/LOLv2/LOLv2test/high/"
+    input_root: "../../../PyDIff/dataset/LOLv2/LOLv2test/low/"
     concat_with_hiseq: true
     concat_with_coord: true
     input_mode: pad

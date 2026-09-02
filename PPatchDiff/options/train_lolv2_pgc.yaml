@@ -47,7 +47,7 @@ datasets:
 
 # network structures
 network_unet:
-  type: PGCSR3UNet
+  type: PGCSR3UNet2
   in_channel: 14
   out_channel: 3
   inner_channel: 64

@@ -9,8 +9,8 @@ datasets:
   train:
     name: train
     type: LOL_Dataset
-    gt_root: "../dataset/LOLv2/Synthetic/Train/Normal"
-    input_root: "../dataset/LOLv2/Synthetic/Train/Low"
+    gt_root: "../../../PyDIff/dataset/LOLv2/LOLv2test/high/"
+    input_root: "../../../PyDIff/dataset/LOLv2/LOLv2test/low/"
     input_mode: ~
     concat_with_hiseq: true
     concat_with_coord: true
@@ -35,8 +35,8 @@ datasets:
     # Or comment the val block if do not need validation during training
     name: validation
     type: LOL_Dataset
-    gt_root: "../dataset/LOLv2/Real_captured/Test/Normal"
-    input_root: "../dataset/LOLv2/Real_captured/Test/Low"
+    gt_root: "../../../PyDIff/dataset/LOLv2/LOLv2test/high/"
+    input_root: "../../../PyDIff/dataset/LOLv2/LOLv2test/low/"
     concat_with_hiseq: true
     concat_with_coord: true
     concat_with_prior: false
@@ -89,7 +89,7 @@ ddpm_schedule:
 
 # path
 path:
-  pretrain_network_g: '../ckpt/lolv2_pgc2.pth'
+  pretrain_network_g: '../../weights/Ours/lolv2_pgc2.pth'
   param_key_g: params
   strict_load_g: False
   pretrain_network_d: ~
@@ -138,7 +138,7 @@ val:
   cal_all: true
   show_all: true
   val_freq: !!float 5000
-  save_img: true
+  save_img: false
 
   metrics:
     psnr: # metric name, can be arbitrary
