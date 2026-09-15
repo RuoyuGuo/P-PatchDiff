@@ -82,6 +82,25 @@ CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --m
 
 ## Testing
 
+> [!NOTE]
+> For testing:
+>
+> Please set the `train` dataset paths to the same paths as the `val` dataset
+>
+> Please also set the `batch_size_per_gpu` to 1.
+> ```yaml
+> datasets:
+>   train:
+>     gt_root: /path/to/test/high
+>     input_root: /path/to/test/low
+>     batch_size_per_gpu: 1
+>
+>   val:
+>     gt_root: /path/to/test/high
+>     input_root: /path/to/test/low
+> ```
+>
+
 * Evaluating on the LOL-v1 testing set
 ```
 CUDA_VISIBLE_DEVICES=0 python pydiff/train.py -opt options/infer_lolv1_pgc.yaml

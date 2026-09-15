@@ -7,9 +7,9 @@ Ruoyu Guo · Haonan Zhong · Maurice Pagnucco · Yang Song
 School of Computer Science and Engineering,  
 University of New South Wales, Sydney, Australia
 
-**Accepted by International Journal of Computer Vision (IJCV)**
+**International Journal of Computer Vision (IJCV), 2026**
 
-[![IJCV](https://img.shields.io/badge/IJCV-Published-blue)](https://link.springer.com/article/10.1007/s11263-026-02995-w)
+[![IJCV](https://img.shields.io/badge/IJCV-2026-blue)](https://link.springer.com/article/10.1007/s11263-026-02995-w)
 [![arXiv](https://img.shields.io/badge/arXiv-2609.01123-b31b1b.svg)](https://arxiv.org/abs/2609.01123)
 [![Weights](https://img.shields.io/badge/Weights-P--PatchDiff-green)](https://drive.google.com/drive/folders/1oCfvwFZNlLmTz7nBnmjseVtOQ7fh6ZYP)
 
@@ -81,6 +81,25 @@ CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --m
 ```
 
 ## Testing
+
+> [!NOTE]
+> For testing:
+>
+> Please set the `train` dataset paths to the same paths as the `val` dataset
+>
+> Please also set the `batch_size_per_gpu` to 1.
+> ```yaml
+> datasets:
+>   train:
+>     gt_root: /path/to/test/high
+>     input_root: /path/to/test/low
+>     batch_size_per_gpu: 1
+>
+>   val:
+>     gt_root: /path/to/test/high
+>     input_root: /path/to/test/low
+> ```
+>
 
 * Evaluating on the LOL-v1 testing set
 ```
