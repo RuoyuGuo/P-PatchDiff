@@ -110,5 +110,19 @@ CUDA_VISIBLE_DEVICES=0 python pydiff/train.py -opt options/infer_lolv1_pgc.yaml
 ## Progressive strategy
 You can use the ```progressive_list``` and ```stride_list``` parameters in the config files to adjust patch size and stride size at each step.
 
+## Citation
+```
+@article{PPatchDiff,
+  title={P-PatchDiff: Progressive patch diffusion models for low-light image enhancement},
+  author={Guo, Ruoyu and Zhong, Haonan and Pagnucco, Maurice and Song, Yang},
+  journal={International Journal of Computer Vision},
+  volume={134},
+  number={9},
+  pages={404},
+  year={2026},
+  publisher={Springer}
+}
+```
+
 ## Acknowledge
 [PyDiff](https://github.com/limuloo/pydiff), [WeatherDiff](https://github.com/IGITUGraz/WeatherDiffusion)
