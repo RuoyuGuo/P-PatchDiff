@@ -17,6 +17,7 @@ University of New South Wales, Sydney, Australia
 
 ## Update
 
+* 09/2026 Add instructions for inference.
 * 05/2026 We release the code and checkpoint.
 
 ## Setup
