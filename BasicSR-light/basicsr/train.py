@@ -93,6 +93,8 @@ def train_pipeline(root_path):
     opt, args = parse_options(root_path, is_train=True)
     opt['root_path'] = root_path
 
+
+
     torch.backends.cudnn.benchmark = True
     # torch.backends.cudnn.deterministic = True
 
@@ -150,6 +152,7 @@ def train_pipeline(root_path):
     logger.info(f'Start training from epoch: {start_epoch}, iter: {current_iter}')
     data_timer, iter_timer = AvgTimer(), AvgTimer()
     start_time = time.time()
+
 
     for epoch in range(start_epoch, total_epochs + 1):
         train_sampler.set_epoch(epoch)

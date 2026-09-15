@@ -9,8 +9,8 @@ datasets:
   train:
     name: train
     type: LOL_Dataset
-    gt_root: "../dataset/LOLv1/our485/high"
-    input_root: "../dataset/LOLv1/our485/low"
+    gt_root: "../../../PyDIff/dataset/LOLdataset/eval15/high/"
+    input_root: "../../../PyDIff/dataset/LOLdataset/eval15/low/"
     input_mode: ~
     concat_with_hiseq: true
     concat_with_coord: true
@@ -26,7 +26,7 @@ datasets:
     # data loader
     use_shuffle: true
     num_worker_per_gpu: 8
-    batch_size_per_gpu: 16
+    batch_size_per_gpu: 1
     dataset_enlarge_ratio: 1
     prefetch_mode: ~
 
@@ -35,8 +35,8 @@ datasets:
     # Or comment the val block if do not need validation during training
     name: validation
     type: LOL_Dataset
-    gt_root: "../../autodl-tmp/dataset/LOLv1/eval15/high"
-    input_root: "../../autodl-tmp/dataset/LOLv1/eval15/low"
+    gt_root: "../../../PyDIff/dataset/LOLdataset/eval15/high/"
+    input_root: "../../../PyDIff/dataset/LOLdataset/eval15/low/"
     concat_with_hiseq: true
     concat_with_coord: true
     concat_with_prior: false
@@ -89,7 +89,7 @@ ddpm_schedule:
 
 # path
 path:
-  pretrain_network_g: '../ckpt/lolv1_pgc.pth'
+  pretrain_network_g: '../../weights/Ours/lolv1_pgc.pth'
   param_key_g: params
   strict_load_g: False
   pretrain_network_d: ~
@@ -138,8 +138,8 @@ val:
   cal_all: true
   show_all: true
   val_freq: !!float 5000
-  save_img: true
-
+  save_img: false
+  
   metrics:
     psnr: # metric name, can be arbitrary
       type: calculate_psnr
